@@ -1,0 +1,331 @@
+0,1,Equal
+"def even_bit_set_number(n):
+    """"""
+    Write a python function to set all even bits of a given number.
+    
+
+    """"""","def even_bit_set_number(n):
+    """"""
+    Design a function that takes an insurance claim identifier and sets its even-positioned bits to enhance fraud detection and risk assessment encoding. The function should modify the claim number's binary representation to mark specific risk indicators or fraud flags based on the even bit positions. The modified claim number will serve as an enhanced identifier for further fraud prevention analysis.
+    
+
+    """"""",YES
+"def kth_element(arr, k):
+    """"""
+    Write a function to find the kth element in the given array using 1-based indexing.
+    
+
+    """"""","def kth_element(arr, k):
+    """"""
+    In a predictive maintenance system for industrial machinery, develop a function that can extract the kth most significant sensor reading from a sequence of performance metrics. The function should use 1-based indexing to retrieve the critical sensor data point that helps identify potential equipment anomalies or performance trends in the manufacturing process.
+    
+
+    """"""",NO
+"def count_element_in_list(list1, x):
+    """"""
+    Write a function to count the number of sublists containing a particular element.
+    
+
+    """"""","def count_element_in_list(list1, x):
+    """"""
+    In a content moderation system, develop a function that analyzes a collection of user-generated content lists to count how many individual content threads contain a specific flagged keyword or phrase of concern. The function should efficiently identify and tally the number of content lists that include the monitored element, helping moderators quickly assess potential safety risks across different community interaction channels.
+    
+
+    """"""",YES
+"def check_tuplex(tuplex, tuple1):
+    """"""
+    Write a function to check whether an element exists within a tuple.
+    
+
+    """"""","def check_tuplex(tuplex, tuple1):
+    """"""
+    In the Global Cross international banking network, develop a function to verify whether a specific transaction identifier or account detail exists within a given transaction tuple. The function should efficiently search through the transaction tuple and return a boolean result indicating the presence or absence of the target element, supporting cross-referencing and validation processes in the banking system.
+    
+
+    """"""",YES
+"def subject_marks(subjectmarks):
+    """"""
+    Write a function to sort a list of tuples using the second value of each tuple.
+    
+
+    """"""","def subject_marks(subjectmarks):
+    """"""
+    In a credit card transaction anomaly detection system, develop a function that sorts a list of transaction tuples based on their anomaly scores. The sorting should prioritize transactions with higher anomaly scores to help machine learning analysts quickly identify and investigate potential fraudulent activities. The function should efficiently order the transaction details to support rapid risk assessment.
+    
+
+    """"""",NO
+"def sumofFactors(n):
+    """"""
+    Write a python function to find the sum of even factors of a number.
+    
+
+    """"""","def sumofFactors(n):
+    """"""
+    In a predictive maintenance system for industrial equipment, develop a function that calculates the sum of even factors for a specific machine component's identification number. This sum can help engineers identify potential stress points or wear patterns in the component by analyzing its structural characteristics. The function should efficiently compute the total of all even divisors to support early detection of potential maintenance requirements.
+    
+
+    """"""",YES
+"def remove_odd(str1):
+    """"""
+    Write a function to remove odd characters in a string.
+    
+
+    """"""","def remove_odd(str1):
+    """"""
+    In a personalized learning recommendation system, develop a function that sanitizes student learning content by removing non-standard characters from lesson transcripts or educational materials. The function should clean the input text by eliminating characters that might interfere with text analysis and recommendation algorithms, ensuring a standardized representation of learning content for further processing.
+    
+
+    """"""",NO
+"def max_difference(test_list):
+    """"""
+    Write a function to find the maximum difference between available pairs in the given tuple list.
+    
+
+    """"""","def max_difference(test_list):
+    """"""
+    In an insurance fraud detection system, develop a function that calculates the maximum difference between claim amounts for suspicious policyholder claim pairs. The function should analyze the list of insurance claim tuples to identify potential risk indicators by finding the most significant financial variation between related claims. This analysis will help risk assessment teams flag potentially fraudulent or anomalous insurance claim submissions.
+    
+
+    """"""",NO
+"def max_aggregate(stdata):
+    """"""
+    Write a function to calculate the maximum aggregate from the list of tuples.
+    
+
+    """"""","def max_aggregate(stdata):
+    """"""
+    Given a list of property transaction records as tuples, develop a function that calculates the maximum aggregate value across the dataset, which will help real estate analysts identify peak market performance metrics. The function should efficiently process the transaction records and return the highest aggregate value, taking into account various market indicators embedded in the property sales data.
+    
+
+    """"""",YES
+"def next_Perfect_Square(N):
+    """"""
+    Write a python function to find the next perfect square greater than a given number.
+    
+
+    """"""","def next_Perfect_Square(N):
+    """"""
+    In an automated loan approval system, develop a function that determines the next perfect square credit score threshold above a customer's current financial rating. This function will help identify the immediate higher standardized credit rating bracket that a customer needs to reach for improved loan eligibility. The function should efficiently calculate the next perfect square score to assist in credit assessment and financial planning.
+    
+
+    """"""",YES
+"def highest_Power_of_2(n):
+    """"""
+    Write a python function to find the highest power of 2 that is less than or equal to n.
+    
+
+    """"""","def highest_Power_of_2(n):
+    """"""
+    In a credit card fraud detection system, design a function that determines the largest power of 2 that can be used for efficiently sampling or processing the total number of transaction features without exceeding the available dataset size. This will help in creating balanced and optimized subsets for machine learning model training, ensuring computational efficiency and preventing data overflow.
+    
+
+    """"""",YES
+"def change_date_format(dt):
+    """"""
+    Write a function to convert a date of yyyy-mm-dd format to dd-mm-yyyy format.
+    
+
+    """"""","def change_date_format(dt):
+    """"""
+    In an AI customer support chatbot system, develop a function that transforms customer interaction timestamps from the internal system format (yyyy-mm-dd) to a standard international display format (dd-mm-yyyy) for improved readability and consistent record-keeping. The function should handle the date string conversion while maintaining the integrity of the original timestamp data.
+    
+
+    """"""",YES
+"def re_arrange_array(arr, n):
+    """"""
+    Write a function that takes in an array and an integer n, and re-arranges the first n elements of the given array so that all negative elements appear before positive ones, and where the relative order among negative and positive elements is preserved.
+    
+
+    """"""","def re_arrange_array(arr, n):
+    """"""
+    In a student performance tracking system, develop a function that reorganizes the first n academic performance indicators such that indicators suggesting potential academic challenges (negative/low scores) are grouped together at the beginning of the list, while maintaining the original relative order within both low and high-performing segments. The goal is to help educators quickly identify students who might need early intervention while preserving the original assessment sequence.
+    
+
+    """"""",YES
+"def even_Power_Sum(n):
+    """"""
+    Write a python function that takes in an integer n and finds the sum of the first n even natural numbers that are raised to the fifth power.
+    
+
+    """"""","def even_Power_Sum(n):
+    """"""
+    In a retail pricing optimization system, develop a function that calculates the total weighted pricing impact across the first n product categories, where each category's pricing influence is determined by raising its category index to the fifth power. The function should compute the cumulative pricing strategy effectiveness by summing these weighted category values.
+    
+
+    """"""",NO
+"def sum_even_and_even_index(arr):
+    """"""
+    Write a python function to find the sum of even numbers at even positions of a list.
+    
+
+    """"""","def sum_even_and_even_index(arr):
+    """"""
+    In a credit card fraud detection system, develop a function that calculates the total sum of transaction amounts located at even indices, focusing specifically on identifying potential anomalous transaction patterns. The function should analyze the transaction list and aggregate the amounts at even positions to help detect unusual financial activities. The goal is to provide a quick computational method for identifying potential fraud indicators within a transaction dataset.
+    
+
+    """"""",NO
+"def long_words(n, str):
+    """"""
+    Write a function to find words that are longer than n characters from a given list of words.
+    
+
+    """"""","def long_words(n, str):
+    """"""
+    In a social networking content recommendation algorithm, develop a function that identifies substantive keywords from user-generated posts by filtering out words shorter than a specified character threshold. The function will help improve content recommendation accuracy by focusing on more meaningful and descriptive terms that provide deeper insights into user interests and engagement.
+    
+
+    """"""",YES
+"def check_distinct(test_tup):
+    """"""
+    Write a function to check if given tuple contains no duplicates.
+    
+
+    """"""","def check_distinct(test_tup):
+    """"""
+    In a banking risk assessment system, develop a function that validates a tuple of financial transaction identifiers to ensure no duplicate entries exist, which could indicate potential fraud or data integrity problems. The function must efficiently check the tuple and return a boolean indicating whether all transaction identifiers are unique, helping prevent erroneous risk assessments.
+    
+
+    """"""",YES
+"def eulerian_num(n, m):
+    """"""
+    Write a function to find the Eulerian number a(n, m).
+    
+
+    """"""","def eulerian_num(n, m):
+    """"""
+    In an adaptive learning platform, design a function that calculates the number of unique learning paths a student can take through a curriculum, where the student must progress through exactly m modules before completing the total n modules, with each path representing a distinct sequence of module completions. The function should compute the Eulerian number a(n, m), which represents the number of ways a student can sequence module completions with specific progression constraints.
+    
+
+    """"""",YES
+"def count_Primes_nums(n):
+    """"""
+    Write a python function that takes in a non-negative number and returns the number of prime numbers less than the given non-negative number.
+    
+
+    """"""","def count_Primes_nums(n):
+    """"""
+    In an adaptive learning platform, develop a function that calculates the number of foundational mathematical modules (represented by prime numbers) available for a student based on their total accessible curriculum levels. The function should efficiently determine the count of prime-numbered learning modules less than the total number of curriculum levels, helping the AI system create personalized and progressively challenging learning paths for students.
+    
+
+    """"""",YES
+"def add_pairwise(test_tup):
+    """"""
+    Write a function to find the pairwise addition of the neighboring elements of the given tuple.
+    
+
+    """"""","def add_pairwise(test_tup):
+    """"""
+    In a credit card fraud detection system, develop a function that calculates the pairwise sum of consecutive transaction amounts to help identify potential unusual transaction patterns. The function should take a sequence of transaction amounts and return a new sequence where each element represents the sum of adjacent transaction values, which could reveal suspicious financial behaviors or transaction irregularities.
+    
+
+    """"""",NO
+"def set_left_most_unset_bit(n):
+    """"""
+    Write a python function to set the left most unset bit.
+    
+
+    """"""","def set_left_most_unset_bit(n):
+    """"""
+    Design a function that modifies a patient's health status binary encoding by identifying and setting the leftmost unset bit, which represents a previously undetected diagnostic indicator or potential health risk. The function should efficiently locate the first zero bit from the left side of the binary representation and transform it to a one, effectively flagging a new health condition or risk marker in the patient's medical profile.
+    
+
+    """"""",YES
+"def minimum(a, b):
+    """"""
+    Write a python function to find the minimum of two numbers.
+    
+
+    """"""","def minimum(a, b):
+    """"""
+    In a retail inventory management system, develop a function that determines the warehouse location with the lower stock quantity to help optimize inventory distribution and prevent potential stockouts. The function should compare the inventory levels of two warehouse locations and return the minimum quantity, enabling more efficient supply chain decision-making.
+    
+
+    """"""",YES
+"def concatenate_tuple(test_tup):
+    """"""
+    Write a function to concatenate each element of tuple by the delimiter.
+    
+
+    """"""","def concatenate_tuple(test_tup):
+    """"""
+    Design a function that combines transaction-related attributes from a given tuple into a single string using a specified delimiter, enabling fraud analysts to create a comprehensive transaction signature for pattern recognition and anomaly detection. The function should efficiently concatenate the transaction attributes while preserving their original order and allowing flexible delimiter selection to support different analysis requirements.
+    
+
+    """"""",YES
+"def validate(n):
+    """"""
+    Write a python function takes in an integer and check whether the frequency of each digit in the integer is less than or equal to the digit itself.
+    
+
+    """"""","def validate(n):
+    """"""
+    Design a function that analyzes a customer's unique transaction ID to determine if the frequency of each digit appears less than or equal to its numeric value, which could help in creating personalized financial risk assessment profiles. The function should evaluate the transaction ID and return a boolean indicating whether the digit frequency meets the specific recommendation criteria. This analysis can help banks develop targeted financial product recommendations based on transaction patterns.
+    
+
+    """"""",YES
+"def count(lst):
+    """"""
+    Write a python function to count true booleans in the given list.
+    
+
+    """"""","def count(lst):
+    """"""
+    Design a function for an adaptive learning platform that calculates the number of learning modules a student has successfully mastered. The function should take a list of boolean performance indicators as input and return the count of true values, representing the number of skills the student has comprehensively learned and is ready to progress to more advanced content.
+    
+
+    """"""",YES
+"def len_log(list1):
+    """"""
+    Write a python function to find the length of the longest word.
+    
+
+    """"""","def len_log(list1):
+    """"""
+    In an e-commerce platform's recommendation system, develop a function that identifies the length of the longest product name or customer search keyword. This analysis will help in understanding customer search behavior, potentially optimizing search result displays and recommendation algorithms. The function should process the list of product names or search keywords and return the character length of the most extensive term.
+    
+
+    """"""",YES
+"def closest_num(N):
+    """"""
+    Write a function to find the closest smaller number than n.
+    
+
+    """"""","def closest_num(N):
+    """"""
+    In a credit card fraud detection system, develop a function that identifies the nearest lower transaction amount which could serve as a baseline for detecting suspicious spending patterns. The function should analyze the input transaction amount and return the closest smaller transaction value that helps establish a potential fraud risk threshold across different geographic locations and purchase types.
+    
+
+    """"""",NO
+"def extract_rear(test_tuple):
+    """"""
+    Write a function to extract only the rear index element of each string in the given tuple.
+    
+
+    """"""","def extract_rear(test_tuple):
+    """"""
+    In a fleet management system for autonomous vehicles, develop a function that extracts the final character from each vehicle identification code in a given collection of vehicle identifiers. This last character could represent critical route information or vehicle-specific designation that is essential for route optimization and tracking. The function should process the entire tuple of vehicle codes and return a new tuple containing only these last characters.
+    
+
+    """"""",YES
+"def text_match_two_three(text):
+    """"""
+    Write a function that checks whether a string contains the 'a' character followed by two or three 'b' characters.
+    
+
+    """"""","def text_match_two_three(text):
+    """"""
+    In a credit card transaction monitoring system, develop a function that identifies potential fraud indicators by detecting specific character sequences in transaction descriptors. The function should check whether a transaction identifier contains a specific pattern of characters that might signal an anomalous or suspicious transaction, specifically looking for an 'a' character immediately followed by two or three consecutive 'b' characters as a potential risk marker.
+    
+
+    """"""",YES
+"def max_sum(arr):
+    """"""
+    Write a function that takes an array and finds the maximum sum of a bitonic subsequence for the given array, where a sequence is bitonic if it is first increasing and then decreasing.
+    
+
+    """"""","def max_sum(arr):
+    """"""
+    In a global cross-border payment settlement platform, design an algorithm to determine the maximum cumulative transaction value of a payment route that first increases across multiple banking networks and then decreases, representing an optimal settlement strategy. The algorithm should analyze a sequence of transaction amounts and identify the most financially advantageous route that follows a bitonic pattern of increasing and then decreasing transaction values.
+    
+
+    """"""",YES

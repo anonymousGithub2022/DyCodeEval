@@ -1,0 +1,349 @@
+0,1,Equal
+"def harmonic_sum(n):
+    """"""
+    Write a function that takes in an integer n and calculates the harmonic sum of n-1.
+    
+
+    """"""","def harmonic_sum(n):
+    """"""
+    Given the number of available delivery time slots in a day, calculate the weighted priority score for the delivery schedule by finding the sum of reciprocals from 1 to n-1, where each fraction represents the declining priority weight of successive time slots. This priority score helps optimize the distribution of deliveries across different time windows throughout the day.
+    
+
+    """"""",YES
+"def round_and_sum(list1):
+    """"""
+    Write a function to round every number of a given list of numbers and print the total sum multiplied by the length of the list.
+    
+
+    """"""","def round_and_sum(list1):
+    """"""
+    At a busy intersection, traffic sensors collect fractional vehicle counts across multiple monitoring points, and you need to calculate the total traffic load by rounding each sensor reading to the nearest whole number and multiplying the sum by the total number of monitoring points. Write a function that takes these sensor readings as input and returns the final traffic load calculation to help determine optimal signal timing.
+    
+
+    """"""",YES
+"def volume_cylinder(r, h):
+    """"""
+    Write a function that takes in the radius and height of a cylinder and returns the the volume.
+    
+
+    """"""","def volume_cylinder(r, h):
+    """"""
+    Design a function to calculate the maximum raw material capacity of the standardized cylindrical storage containers used on the manufacturing line, given their internal radius and height measurements. This calculation is essential for determining batch sizes and optimizing material usage across production shifts.
+    
+
+    """"""",YES
+"def max_length(list1):
+    """"""
+    Write a function to find the list of maximum length in a list of lists.
+    
+
+    """"""","def max_length(list1):
+    """"""
+    Given student test score histories where each student has a varying number of assessment scores, find the student record with the most recorded assessments. The student records are stored as lists within a list, where each inner list contains a sequence of test scores for one student.
+    
+
+    """"""",YES
+"def next_Perfect_Square(N):
+    """"""
+    Write a python function to find the next perfect square greater than a given number.
+    
+
+    """"""","def next_Perfect_Square(N):
+    """"""
+    Design a function that determines the next mathematical achievement milestone for a student by finding the next perfect square above their current mastery level score. This adaptive learning system helps ensure students progress to appropriately challenging content while maintaining a natural sequence in their number pattern studies.
+    
+
+    """"""",YES
+"def square_perimeter(a):
+    """"""
+    Write a function that returns the perimeter of a square given its side length as input.
+    
+
+    """"""","def square_perimeter(a):
+    """"""
+    Calculate the total border length needed for a square content preview box in a social media feed, where the length of one side of the preview box is given in pixels. This value is essential for rendering consistent content borders across different device screens and maintaining visual hierarchy in the recommendation feed.
+    
+
+    """"""",YES
+"def loss_amount(actual_cost, sale_amount):
+    """"""
+    Write a function that gives loss amount on a sale if the given amount has loss else return 0.
+    
+
+    """"""","def loss_amount(actual_cost, sale_amount):
+    """"""
+    Write a function that calculates the investment loss amount when an investor sells a financial asset below their initial purchase price, returning the difference between the purchase price and sale price if there's a loss, or 0 if the investment was sold at a profit or break-even. The function should take the original investment amount and final sale value as inputs and help portfolio managers track realized losses for tax and performance reporting purposes.
+    
+
+    """"""",YES
+"def median_trapezium(base1, base2, height):
+    """"""
+    Write a function to find the median length of a trapezium.
+    
+
+    """"""","def median_trapezium(base1, base2, height):
+    """"""
+    Given a delivery route segment with different corridor widths at its start and end points due to varying traffic conditions, calculate the median path length that delivery vehicles should follow to optimize their journey. The start width (base1) and end width (base2) represent the available road space for vehicles to maneuver, while the height represents the direct distance between the segment's endpoints.
+    
+
+    """"""",NO
+"def check_type(test_tuple):
+    """"""
+    Write a function to check if all the elements in tuple have same data type or not.
+    
+
+    """"""","def check_type(test_tuple):
+    """"""
+    Write a function to verify if all sensor readings collected from a manufacturing machine are of the same data type, as inconsistent data types could indicate sensor malfunctions requiring immediate maintenance attention. The function should examine a tuple of sensor measurements and determine if they maintain data type consistency across all readings.
+    
+
+    """"""",YES
+"def search(arr):
+    """"""
+    Write a python function to find the element that appears only once in a sorted array.
+    
+
+    """"""","def search(arr):
+    """"""
+    In a bank's sorted transaction log, where legitimate transactions typically occur in pairs (debit and credit entries with matching amounts), write a function to identify the single unpaired transaction amount that could indicate potential fraud. The transaction log is pre-sorted by amount, and all legitimate transactions appear exactly twice, while the suspicious transaction appears only once.
+    
+
+    """"""",YES
+"def extract_singly(test_list):
+    """"""
+    Write a function to flatten the list of lists into a single set of numbers.
+    
+
+    """"""","def extract_singly(test_list):
+    """"""
+    Given a user's nested interaction data containing multiple content engagement metrics across different categories, create a function that consolidates all interaction values into a single unified set of engagement metrics. The function should process nested groups of engagement data (views, likes, shares) and return a deduplicated collection of all interaction values, regardless of their original category or grouping structure.
+    
+
+    """"""",NO
+"def count_bidirectional(test_list):
+    """"""
+    Write a function to count bidirectional tuple pairs.
+    
+
+    """"""","def count_bidirectional(test_list):
+    """"""
+    Given a list of event co-attendance records where each record is a tuple of two user IDs representing pairs of users who attended the same event, write a function to count unique social connections while treating reciprocal connections (user1, user2) and (user2, user1) as a single connection. For example, if users 1 and 2 attended events together multiple times in different orders, they should only be counted as one unique social connection.
+    
+
+    """"""",NO
+"def find_even_pair(A):
+    """"""
+    Write a function that counts the number of pairs of integers in a list that xor to an even number.
+    
+
+    """"""","def find_even_pair(A):
+    """"""
+    Write a function that determines the number of demographic segment pairs in a social network that, when their identifiers are XORed together, produce an even result, indicating compatible trend patterns. Each identifier in the input list represents a unique demographic segment encoded as an integer, combining factors like age group, location, and interests.
+    
+
+    """"""",YES
+"def len_log(list1):
+    """"""
+    Write a python function to find the length of the longest word.
+    
+
+    """"""","def len_log(list1):
+    """"""
+    Design a function for an adaptive learning platform that determines the length of the most sophisticated word in a student's written response to help assess their vocabulary level. The function should analyze a collection of words from the student's submission and return the character count of the longest word, which will be used to dynamically adjust the difficulty of subsequent learning materials.
+    
+
+    """"""",YES
+"def remove_uppercase(str1):
+    """"""
+    Write a function to remove uppercase substrings from a given string.
+    
+
+    """"""","def remove_uppercase(str1):
+    """"""
+    Create a function that filters out uppercase text segments from user event comments to maintain a consistent tone in the event suggestion feed. The function should process user-generated content by removing any sequence of uppercase characters while preserving the remaining text, ensuring a more balanced and friendly presentation of event discussions.
+    
+
+    """"""",YES
+"def sum_series(n):
+    """"""
+    Write a function to calculate the sum (n - 2*i) from i=0 to n // 2, for instance n + (n-2) + (n-4)... (until n-x =< 0).
+    
+
+    """"""","def sum_series(n):
+    """"""
+    As a fleet manager, you need to calculate the total efficiency score of route consolidations throughout the day. Starting with an initial number of delivery routes, routes are consolidated in pairs as traffic conditions change, with each consolidation phase reducing the route count by 2. The efficiency score for each phase is equal to the number of routes remaining at that time. Calculate the sum of efficiency scores across all consolidation phases, continuing until no more route pairs can be combined (when 0 or 1 routes remain). For example, with 6 initial routes, you would sum the scores from 6 routes, then 4 routes, then 2 routes, representing each consolidation phase.
+    
+
+    """"""",YES
+"def min_product_tuple(list1):
+    """"""
+    Write a function to find the minimum product from the pairs of tuples within a given list.
+    
+
+    """"""","def min_product_tuple(list1):
+    """"""
+    Given a list of tuples where each tuple contains a student performance score and classroom capacity, write a function to find the smallest possible product when multiplying a performance score with a room capacity to determine the most efficient class arrangement. The function should consider all possible combinations of performance-capacity pairs from the input list and return the minimum product value that can be achieved.
+    
+
+    """"""",YES
+"def even_bit_set_number(n):
+    """"""
+    Write a python function to set all even bits of a given number.
+    
+
+    """"""","def even_bit_set_number(n):
+    """"""
+    In a fleet management system where route availability is represented as a binary number, write a function that activates all even-positioned delivery routes by setting their corresponding bits to 1. The function should take the current route status as input and return a new binary number with all even bits set to 1 while preserving the odd bits' original values.
+    
+
+    """"""",YES
+"def tetrahedral_number(n):
+    """"""
+    Write a function to find the nth tetrahedral number.
+    
+
+    """"""","def tetrahedral_number(n):
+    """"""
+    Given a piece of factory equipment that accumulates interconnected stress points in a tetrahedral pattern across maintenance cycles, calculate the total number of inspection points needed after n maintenance cycles, where each new cycle adds stress points that form a triangular layer on top of previous cycles' points. The stress points accumulation follows a pattern where each new maintenance cycle n adds a triangular layer of points on top of the previous cycles' accumulated points, creating a tetrahedral structure of inspection requirements.
+    
+
+    """"""",YES
+"def subject_marks(subjectmarks):
+    """"""
+    Write a function to sort a list of tuples using the second value of each tuple.
+    
+
+    """"""","def subject_marks(subjectmarks):
+    """"""
+    Given a list of bus route-delay pairs where each pair contains a route identifier and its average delay time in minutes, create a function that sorts these pairs based on their delay times to identify routes requiring immediate schedule adjustments. The sorted list should help transit planners prioritize routes experiencing the most significant delays, enabling them to optimize public transportation schedules effectively.
+    
+
+    """"""",YES
+"def even_binomial_Coeff_Sum(n):
+    """"""
+    Write a python function that takes in a positive integer n and finds the sum of even index binomial coefficients.
+    
+
+    """"""","def even_binomial_Coeff_Sum(n):
+    """"""
+    Given a student's personalized learning path with n modules, calculate the total number of balanced module combinations that can be formed by selecting modules at even-indexed positions in the curriculum sequence. Each balanced combination represents an optimal blend of learning complexity levels, and the sum of these combinations will help determine the most effective progression path for the student.
+    
+
+    """"""",NO
+"def amicable_numbers_sum(limit):
+    """"""
+    Write a function to sum all amicable numbers from 1 to a specified number.
+    
+
+    """"""","def amicable_numbers_sum(limit):
+    """"""
+    In a social network analysis system, write a function that identifies and sums all pairs of user IDs (from 1 to a given limit) where the sum of each user's engagement factors perfectly matches the other's ID, creating a reciprocal relationship pattern. Each user's engagement factor is calculated as the sum of all proper divisors of their ID (excluding the ID itself), and these reciprocal pairs represent mutually beneficial engagement patterns in the network.
+    
+
+    """"""",YES
+"def first_non_repeating_character(str1):
+    """"""
+    Write a python function to find the first non-repeated character in a given string.
+    
+
+    """"""","def first_non_repeating_character(str1):
+    """"""
+    In a manufacturing quality control system, develop a function that analyzes OCR-scanned product codes to identify the first unique character that can distinguish the item from similar products on the production line. The function should process a string of characters from the OCR scan and return the first character that appears exactly once in the product code.
+    
+
+    """"""",YES
+"def count_samepair(list1, list2, list3):
+    """"""
+    Write a function to count number items that are identical in the same position of three given lists.
+    
+
+    """"""","def count_samepair(list1, list2, list3):
+    """"""
+    Write a function that determines how many identical social media interaction patterns exist between a user and two recommended connections by comparing their historical engagement data at corresponding positions. The function should analyze three lists of interaction codes (representing likes, shares, and comments) and return the count of positions where all three users exhibited the same behavior.
+    
+
+    """"""",NO
+"def is_lower(string):
+    """"""
+    Write a python function to convert the given string to lower case.
+    
+
+    """"""","def is_lower(string):
+    """"""
+    Write a function that standardizes student assessment responses by converting their written text to lowercase, enabling the learning gap detection system to accurately analyze response patterns regardless of capitalization variations. The function should process any text input from student submissions and return the standardized lowercase version for consistent pattern matching.
+    
+
+    """"""",YES
+"def check_greater(arr, number):
+    """"""
+    Write a function to check whether the entered number is greater than the elements of the given array.
+    
+
+    """"""","def check_greater(arr, number):
+    """"""
+    Given historical attendance data from past events in a category, determine if a proposed event's minimum attendance threshold exceeds all previous attendance records. Write a function that compares the minimum attendance requirement against an array of past event attendance numbers and returns true if the new threshold is higher than all previous records.
+    
+
+    """"""",YES
+"def bell_number(n):
+    """"""
+    Write a function to find the number of ways to partition a set of Bell numbers.
+    
+
+    """"""","def bell_number(n):
+    """"""
+    Given a set of n suspicious transaction patterns identified by the fraud detection system, determine the total number of possible ways these patterns can be grouped into distinct behavioral clusters, where each transaction pattern must belong to exactly one cluster and empty clusters are not allowed. Each clustering arrangement represents a unique way of organizing potentially fraudulent activities for investigation.
+    
+
+    """"""",NO
+"def surfacearea_cube(l):
+    """"""
+    Write a function to find the surface area of a cube of a given size.
+    
+
+    """"""","def surfacearea_cube(l):
+    """"""
+    Calculate the total surface area of a medical isolation cube unit to determine the precise amount of sterilization solution needed for complete disinfection, where the isolation unit has equal sides of length l meters. The surface area calculation is essential for maintaining sterile conditions and ensuring proper sanitization protocols in the infectious disease ward.
+    
+
+    """"""",YES
+"def find_equal_tuple(Input):
+    k = 0 if not Input else len(Input[0])
+    flag = 1
+    for tuple in Input:
+        if len(tuple) != k:
+            flag = 0
+            break
+    return flag
+
+def get_equal(Input):
+    """"""
+    Write a function to find whether all the given tuples have equal length or not.
+    
+
+    """"""","def find_equal_tuple(Input):
+    k = 0 if not Input else len(Input[0])
+    flag = 1
+    for tuple in Input:
+        if len(tuple) != k:
+            flag = 0
+            break
+    return flag
+
+def get_equal(Input):
+    """"""
+    Write a function to verify if all user interaction records in the social media feed have a consistent format by checking whether each engagement pattern tuple (likes, shares, comments, saves) has the same length. The function should help maintain data integrity for the feed personalization system by ensuring all user interaction patterns follow a standardized structure.
+    
+
+    """"""",YES
+"def is_Monotonic(A):
+    """"""
+    Write a python function to check whether the given array is monotonic or not.
+    
+
+    """"""","def is_Monotonic(A):
+    """"""
+    Write a function to determine if a sequence of equipment sensor readings follows a strictly increasing or decreasing pattern, which could indicate consistent degradation or improvement in machine performance. The function should analyze the time-series data from the sensor and return true if the readings are either consistently increasing or consistently decreasing, and false otherwise.
+    
+
+    """"""",YES

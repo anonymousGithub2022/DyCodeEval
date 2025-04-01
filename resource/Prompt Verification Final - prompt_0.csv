@@ -1,0 +1,419 @@
+0,1,Equal
+"from typing import List
+
+def string_xor(a: str, b: str) -> str:
+    """"""
+    Input are two strings a and b consisting only of 1s and 0s.Perform binary XOR on these inputs and return result also as a string.
+    
+    >>>string_xor('010', '110')
+    '100'
+    """"""","from typing import List
+
+def string_xor(a: str, b: str) -> str:
+    """"""
+    In an adaptive learning platform, you need to compare a student's answer pattern with the correct answer key to identify areas needing improvement. Given a student's response string and the answer key string (both containing only 1s and 0s where 1 represents correct and 0 represents incorrect), create a function that performs a binary XOR operation between these strings to highlight discrepancies. The function should return a new binary string where 1s indicate mismatches between the student's answers and the correct answers.
+    
+    >>>string_xor('010', '110')
+    '100'
+    """"""",YES
+"def is_nested(string):
+    """"""
+    Create a function that takes a string as input which contains only square brackets.The function should return True if and only if there is a valid subsequence of brackets where at least one bracket in the subsequence is nested.is_nested('[[]]') ➞ Trueis_nested('[]]]]]]][[[[[]') ➞ Falseis_nested('[][]') ➞ Falseis_nested('[]') ➞ Falseis_nested('[[][]]') ➞ Trueis_nested('[[]][[') ➞ True
+    
+
+    """"""","def is_nested(string):
+    """"""
+    In an online learning management system, course modules are represented using a sequence of square brackets, where nested brackets indicate submodules within a larger course. Write a function that analyzes the course structure notation and determines if there exists at least one properly nested submodule within the course. A valid course structure must have properly matched opening and closing brackets, and the function should return True only if there is at least one nested module within another module.
+    
+
+    """"""",YES
+"def split_words(txt):
+    """"""
+    Given a string of words, return a list of words split on whitespace, if no whitespaces exists in the text youshould split on commas ',' if no commas exists you should return the number of lower-case letters with odd order in thealphabet, ord('a') = 0, ord('b') = 1, ... ord('z') = 25Examplessplit_words(""Hello world!"") ➞ [""Hello"", ""world!""]split_words(""Hello,world!"") ➞ [""Hello"", ""world!""]split_words(""abcdef"") == 3
+    
+
+    """"""","def split_words(txt):
+    """"""
+    Given a user's social media post content, develop a function that processes the text to help identify potential content connections. The function should first attempt to split the text on spaces to separate distinct words or hashtags. If no spaces are found, the system should try splitting on commas to identify multiple tagged topics. For posts containing neither spaces nor commas, return the count of lowercase letters that appear in odd-numbered positions in the alphabet (where 'a'=0, 'b'=1, etc.) to determine content similarity score. This text processing will be used to match users with similar posting patterns and recommend relevant connections.
+    
+
+    """"""",YES
+"def starts_one_ends(n):
+    """"""
+    Given a positive integer n, return the count of the numbers of n-digitpositive integers that start or end with 1.
+    
+
+    """"""","def starts_one_ends(n):
+    """"""
+    In a logistics company's route numbering system, determine how many possible n-digit route numbers can be assigned to express delivery lanes, where express routes must have identification numbers that either start or end with 1. Each route number must be a positive integer using exactly n digits with no leading zeros.
+    
+
+    """"""",YES
+"def do_algebra(operator, operand):
+    """"""
+    Given two lists operator, and operand. The first list has basic algebra operations, and the second list is a list of integers. Use the two given lists to build the algebric expression and return the evaluation of this expression.The basic algebra operations:Addition ( + ) Subtraction ( - ) Multiplication ( * ) Floor division ( // ) Exponentiation ( ** ) Example:operator['+', '*', '-']array = [2, 3, 4, 5]result = 2 + 3 * 4 - 5=> result = 9Note:    The length of operator list is equal to the length of operand list minus one.    Operand is a list of of non-negative integers.    Operator list has at least one operator, and operand list has at least two operands.
+    
+
+    """"""","def do_algebra(operator, operand):
+    """"""
+    In a hospital's patient monitoring system, you need to develop a risk calculation engine that combines multiple health metrics to determine a patient's readmission risk score. You are given two lists: risk_operations and health_metrics. The risk_operations list contains mathematical operators ('+', '-', '*', '//', '**') that define how different health metrics interact and influence each other in the risk calculation. The health_metrics list contains normalized numerical values (non-negative integers) representing various patient health indicators such as blood pressure index, cholesterol levels, and previous admission history. The engine must process these metrics sequentially using the given operations to produce a final risk score. For example, if risk_operations is ['+', '*', '-'] and health_metrics is [2, 3, 4, 5], the calculation would be 2 + 3 * 4 - 5, resulting in a risk score of 9. The number of operations will always be one less than the number of health metrics, and there will always be at least two health metrics and one operation to process.
+    
+
+    """"""",YES
+"def add_elements(arr, k):
+    """"""
+    Given a non-empty array of integers arr and an integer k, returnthe sum of the elements with at most two digits from the first k elements of arr.Example:    Input: arr = [111,21,3,4000,5,6,7,8,9], k = 4    Output: 24 # sum of 21 + 3Constraints:    1. 1 <= len(arr) <= 100    2. 1 <= k <= len(arr)
+    
+
+    """"""","def add_elements(arr, k):
+    """"""
+    In a hospital's patient monitoring system, you are given a non-empty array of health risk scores where each score represents a patient's readmission risk based on their medical parameters. Given this array of risk scores and a number k representing the most recent records to analyze, calculate the sum of all manageable risk scores (scores with at most two digits) from the k most recent records. A manageable risk score indicates a case where preventive intervention could effectively reduce readmission risk. For example, if the risk scores are [111,21,3,4000,5,6,7,8,9] and k=4, the sum would be 24 (combining the manageable scores 21 and 3 from the first 4 records). The array length will be between 1 and 100 inclusive, and k will be a positive integer not exceeding the array length.
+    
+
+    """"""",YES
+"def fruit_distribution(s, n):
+    """"""
+    In this task, you will be given a string that represents a number of apples and oranges that are distributed in a basket of fruit this basket contains apples, oranges, and mango fruits. Given the string that represents the total number of the oranges and apples and an integer that represent the total number of the fruits in the basket return the number of the mango fruits in the basket.for examble:fruit_distribution(""5 apples and 6 oranges"", 19) ->19 - 5 - 6 = 8fruit_distribution(""0 apples and 1 oranges"",3) -> 3 - 0 - 1 = 2fruit_distribution(""2 apples and 3 oranges"", 100) -> 100 - 2 - 3 = 95fruit_distribution(""100 apples and 1 oranges"",120) -> 120 - 100 - 1 = 19
+    
+
+    """"""","def fruit_distribution(s, n):
+    """"""
+    At a manufacturing facility's quality control checkpoint, an automated vision system scans products on a conveyor belt and outputs a string containing counts of correctly identified apples and oranges. Given this vision system output string and the total number of products detected by the overhead camera, determine how many items were classified as mangoes. The system can only classify items as apples, oranges, or mangoes, and every item must be classified as one of these three types. The vision system's output string always follows the format ""X apples and Y oranges"" where X and Y are non-negative integers.
+    
+
+    """"""",YES
+"def largest_prime_factor(n: int):
+    """"""
+    Return the largest prime factor of n. Assume n > 1 and is not a prime.
+    
+    >>>largest_prime_factor(13195)
+    29
+    >>>largest_prime_factor(2048)
+    2
+    """"""","def largest_prime_factor(n: int):
+    """"""
+    In a hospital's predictive health analytics system, each patient is assigned a composite risk score based on multiple health indicators. Given a patient's composite risk score, identify the most significant independent health risk component by determining the largest prime factor of their score. The risk score is guaranteed to be a composite number greater than 1, composed of multiple risk factors.
+    
+    >>>largest_prime_factor(13195)
+    29
+    >>>largest_prime_factor(2048)
+    2
+    """"""",YES
+"def prod_signs(arr):
+    """"""
+    You are given an array arr of integers and you need to returnsum of magnitudes of integers multiplied by product of all signsof each number in the array, represented by 1, -1 or 0.Note: return None for empty arr.Example:>>> prod_signs([1, 2, 2, -4]) == -9>>> prod_signs([0, 1]) == 0>>> prod_signs([]) == None
+    
+
+    """"""","def prod_signs(arr):
+    """"""
+    At a manufacturing plant, you need to analyze equipment sensor data to assess overall system health. Given an array of sensor readings where positive values indicate above-threshold operations, negative values indicate below-threshold deviations, and zeros represent sensor failures, calculate the total severity impact by multiplying all directional indicators (+1, -1, 0) and summing the absolute sensor reading values. Return None if no sensor data is available.
+    
+
+    """"""",YES
+"def check_dict_case(dict):
+    """"""
+    Given a dictionary, return True if all keys are strings in lower case or all keys are strings in upper case, else return False.The function should return False is the given dictionary is empty.Examples:check_dict_case({""a"":""apple"", ""b"":""banana""}) should return True.check_dict_case({""a"":""apple"", ""A"":""banana"", ""B"":""banana""}) should return False.check_dict_case({""a"":""apple"", 8:""banana"", ""a"":""apple""}) should return False.check_dict_case({""Name"":""John"", ""Age"":""36"", ""City"":""Houston""}) should return False.check_dict_case({""STATE"":""NC"", ""ZIP"":""12345"" }) should return True.
+    
+
+    """"""","def check_dict_case(dict):
+    """"""
+    In a hospital's Emergency Department Management System, you need to validate the formatting consistency of data dictionaries used for different monitoring purposes. Write a function that checks whether all dictionary keys follow a consistent case format (either all uppercase or all lowercase) and returns True only if they do. The function should analyze dictionaries containing patient metrics, department configurations, or status indicators where maintaining consistent key formats is crucial for data integrity. The function must return False if the dictionary is empty or contains any non-string keys. For department-level tracking, all keys must be lowercase (e.g., ""wait_time"", ""bed_capacity""), while for system-wide configurations, all keys must be uppercase (e.g., ""STAFF_COUNT"", ""EMERGENCY_STATUS""). Any mixture of cases or presence of non-string keys should return False, as this could lead to data tracking errors in the emergency department's monitoring system.
+    
+
+    """"""",YES
+"def common(l1: list, l2: list):
+    """"""
+    Return sorted unique common elements for two lists.
+    
+    >>>common([1, 4, 3, 34, 653, 2, 5], [5, 7, 1, 5, 9, 653, 121])
+    [1, 5, 653]
+    >>>common([5, 3, 2, 8], [3, 2])
+    [2, 3]
+    """"""","def common(l1: list, l2: list):
+    """"""
+    Given two lists of content violation codes - one from primary language posts and another from secondary language posts, identify and return all unique violation patterns that occur in both language categories in ascending order to help establish cross-language moderation priorities. Each violation code is a unique integer representing a specific type of content violation, and the system needs to determine which types of violations are common across different language content.
+    
+    >>>common([1, 4, 3, 34, 653, 2, 5], [5, 7, 1, 5, 9, 653, 121])
+    [1, 5, 653]
+    >>>common([5, 3, 2, 8], [3, 2])
+    [2, 3]
+    """"""",YES
+"def closest_integer(value):
+    """"""
+    Create a function that takes a value (string) representing a numberand returns the closest integer to it. If the number is equidistantfrom two integers, round it away from zero.ExamplesNote:Rounding away from zero means that if the given number is equidistantfrom two integers, the one you should return is the one that is thefarthest from zero. For example closest_integer(""14.5"") shouldreturn 15 and closest_integer(""-14.5"") should return -15.
+    
+    >>>closest_integer(""10"")
+    10
+    >>>closest_integer(""15.3"")
+    15
+    """"""","def closest_integer(value):
+    """"""
+    Design a scoring system for an adaptive learning platform that determines a student's final performance level based on their raw assessment score. The system should take a student's raw score as a string input and convert it to the nearest integer performance level. To ensure appropriate course difficulty progression, when a student's score falls exactly between two performance levels, the system should assign them to the more challenging level (higher absolute value). For example, a raw score of ""14.5"" should place a student in level 15, while a score of ""-14.5"" should place them in level -15. This rounding mechanism helps maintain an optimal balance between student capability and course difficulty, ensuring students are appropriately challenged without being overwhelmed.
+    
+    >>>closest_integer(""10"")
+    10
+    >>>closest_integer(""15.3"")
+    15
+    """"""",YES
+"def bf(planet1, planet2):
+    """"""
+    There are eight planets in our solar system: the closerst to the Sun is Mercury, the next one is Venus, then Earth, Mars, Jupiter, Saturn, Uranus, Neptune.Write a function that takes two planet names as strings planet1 and planet2. The function should return a tuple containing all planets whose orbits are located between the orbit of planet1 and the orbit of planet2, sorted by the proximity to the sun. The function should return an empty tuple if planet1 or planet2are not correct planet names. Examplesbf(""Jupiter"", ""Neptune"") ==> (""Saturn"", ""Uranus"")bf(""Earth"", ""Mercury"") ==> (""Venus"")bf(""Mercury"", ""Uranus"") ==> (""Venus"", ""Earth"", ""Mars"", ""Jupiter"", ""Saturn"")
+    
+
+    """"""","def bf(planet1, planet2):
+    """"""
+    In an adaptive astronomy learning platform, students progress through different levels of solar system knowledge, starting from basic concepts to advanced understanding. Each knowledge level is named after a planet, ordered from Mercury (beginner) to Neptune (expert), representing increasing complexity in astronomical concepts. Write a function that takes a student's current knowledge level (planet1) and their target level (planet2) as input strings. The function should return a tuple containing all the intermediate learning levels the student needs to complete, in order of increasing difficulty. If either the current level or target level inputs don't match valid knowledge level names, the function should return an empty tuple. This progression system helps create personalized learning paths while ensuring students master prerequisite concepts before advancing to more complex topics.
+    
+
+    """"""",YES
+"def check_if_last_char_is_a_letter(txt):
+    """"""
+    Create a function that returns True if the last characterof a given string is an alphabetical character and is nota part of a word, and False otherwise.Note: ""word"" is a group of characters separated by space.Examples:check_if_last_char_is_a_letter(""apple pie"") ➞ Falsecheck_if_last_char_is_a_letter(""apple pi e"") ➞ Truecheck_if_last_char_is_a_letter(""apple pi e "") ➞ Falsecheck_if_last_char_is_a_letter("""") ➞ False
+    
+
+    """"""","def check_if_last_char_is_a_letter(txt):
+    """"""
+    Create a function that helps identify social media posts that end with a single isolated letter, which could indicate coded messages or unconventional writing patterns requiring moderation review. The function should return True if a post ends with a standalone alphabetical character (separated by space from other words), and False in all other cases, including empty posts or posts ending with spaces. This pattern detection will assist content moderators in flagging potentially suspicious communication patterns for further review.
+    
+
+    """"""",YES
+"def tri(n):
+    """"""
+    Everyone knows Fibonacci sequence, it was studied deeply by mathematicians in the last couple centuries. However, what people don't know is Tribonacci sequence.Tribonacci sequence is defined by the recurrence:tri(1) = 3tri(n) = 1 + n / 2, if n is even.tri(n) =  tri(n - 1) + tri(n - 2) + tri(n + 1), if n is odd.For example:tri(2) = 1 + (2 / 2) = 2tri(4) = 3tri(3) = tri(2) + tri(1) + tri(4)       = 2 + 3 + 3 = 8 You are given a non-negative integer number n, you have to a return a list of the first n + 1 numbers of the Tribonacci sequence.Examples:tri(3) = [1, 3, 2, 8]
+    
+
+    """"""","def tri(n):
+    """"""
+    In a modern banking system, credit analysts need to implement a new Credit Behavior Pattern (CBP) scoring mechanism that evaluates customer creditworthiness across multiple assessment cycles. The CBP score for the first cycle is preset at 3 points, and subsequent scores follow specific rules: for even-numbered cycles, the score is calculated as 1 plus half the cycle number, while for odd-numbered cycles, the score combines the CBP scores from the previous two cycles plus the next cycle. For example, cycle 2's score would be 2 points (1 + 2/2), cycle 4's score would be 3 points, and cycle 3's score would sum the scores from cycles 2, 1, and 4 (2 + 3 + 3 = 8). Given a number of assessment cycles n, develop a system that generates a comprehensive report containing the CBP scores for all cycles from 0 to n, inclusive, following these scoring rules. This scoring pattern helps banks establish reliable credit behavior trends and make informed lending decisions.
+    
+
+    """"""",YES
+"def fix_spaces(text):
+    """"""
+    Given a string text, replace all spaces in it with underscores, and if a string has more than 2 consecutive spaces, then replace all consecutive spaces with - fix_spaces(""Example"") == ""Example""fix_spaces(""Example 1"") == ""Example_1""fix_spaces("" Example 2"") == ""_Example_2""fix_spaces("" Example   3"") == ""_Example-3""
+    
+
+    """"""","def fix_spaces(text):
+    """"""
+    Given a user-generated social media post, normalize its spacing by replacing single spaces with underscores and multiple consecutive spaces with hyphens to create a standardized format for the content moderation system.
+    
+
+    """"""",YES
+"def compare_one(a, b):
+    """"""
+    Create a function that takes integers, floats, or strings representingreal numbers, and returns the larger variable in its given variable type.Return None if the values are equal.Note: If a real number is represented as a string, the floating point might be . or ,compare_one(1, 2.5) ➞ 2.5compare_one(1, ""2,3"") ➞ ""2,3""compare_one(""5,1"", ""6"") ➞ ""6""compare_one(""1"", 1) ➞ None
+    
+
+    """"""","def compare_one(a, b):
+    """"""
+    Design a monitoring function for manufacturing equipment that compares current sensor readings against established safety thresholds. The function should accept two parameters: the current sensor reading and the threshold value, which may be stored in different formats (integers, floats, or strings due to legacy systems). The function must return the larger value in its original format to identify when readings exceed thresholds, maintaining compatibility with both modern and legacy monitoring systems. For string-formatted numbers, the decimal separator might appear as either a period or comma, reflecting different international standards in manufacturing documentation. The function should return None if the current reading exactly matches the threshold, indicating stable operation. This comparison system must seamlessly handle mixed data types while preserving the original format of the larger value for consistent logging and reporting purposes.
+    
+
+    """"""",YES
+"def fizz_buzz(n: int):
+    """"""
+    Return the number of times the digit 7 appears in integers less than n which are divisible by 11 or 13.
+    
+    >>>fizz_buzz(50)
+    0
+    >>>fizz_buzz(78)
+    2
+    >>>fizz_buzz(79)
+    3
+    """"""","def fizz_buzz(n: int):
+    """"""
+    In a hospital's electronic health record system, determine how many high-risk patients have the critical indicator '7' in their patient ID numbers, where high-risk is defined by IDs divisible by either 11 or 13, and all IDs are less than n. The presence of '7' in these specific ID numbers helps identify patients requiring immediate intervention in the hospital's risk management protocol.
+    
+    >>>fizz_buzz(50)
+    0
+    >>>fizz_buzz(78)
+    2
+    >>>fizz_buzz(79)
+    3
+    """"""",YES
+"def add(lst):
+    """"""
+    Given a non-empty list of integers lst. add the even elements that are at odd indices..Examples:    add([4, 2, 6, 7]) ==> 2
+    
+
+    """"""","def add(lst):
+    """"""
+    In a hospital's patient monitoring system, you are given a series of daily health measurements from a patient's hospital stay, stored as non-empty numerical sequence. To calculate part of the readmission risk score, you need to sum only the stable readings (represented by even numbers) that were recorded on odd-numbered days of the patient's stay (odd indices in the sequence). The measurements are taken daily, and the sequence starts with day 1 at index 0. Your task is to compute this partial risk score by adding only the qualifying measurements.
+    
+
+    """"""",YES
+"def is_simple_power(x, n):
+    """"""
+    Your task is to write a function that returns true if a number x is a simplepower of n and false in other cases.x is a simple power of n if n**int=xFor example:is_simple_power(1, 4) => trueis_simple_power(2, 2) => trueis_simple_power(8, 2) => trueis_simple_power(3, 2) => falseis_simple_power(3, 1) => falseis_simple_power(5, 3) => false
+    
+
+    """"""","def is_simple_power(x, n):
+    """"""
+    Write a function to determine if a post's total share count represents organic viral growth by checking if the total shares (x) can be expressed as a perfect exponential spread from the base viral factor (n). For example, if a post has 8 total shares and the typical viral factor is 2 (each share generates 2 new shares), this would represent natural viral growth since 2³=8, but 5 total shares with a viral factor of 2 would indicate artificial amplification.
+    
+
+    """"""",YES
+"def derivative(xs: list):
+    """"""
+    xs represent coefficients of a polynomial.xs[0] + xs[1] * x + xs[2] * x^2 + .... Return derivative of this polynomial in the same form.
+    
+    >>>derivative([3, 1, 2, 4, 5])
+    [1, 4, 12, 20]
+    >>>derivative([1, 2, 3])
+    [2, 6]
+    """"""","def derivative(xs: list):
+    """"""
+    In a manufacturing facility, equipment degradation is modeled using a polynomial function where coefficients represent different wear patterns observed through sensor data. The coefficients are stored in an array where the first element represents the baseline wear, the second element represents the linear wear rate, the third represents accelerating wear patterns, and so on, with each subsequent coefficient corresponding to higher-order wear effects. Given these degradation coefficients, calculate the rate of change in equipment wear over time by finding the derivative of this wear function. The result should maintain the same polynomial structure but represent the instantaneous rate of deterioration rather than total wear. This calculation is crucial for predictive maintenance systems to determine how quickly equipment condition is changing and when intervention might be needed. The derivative coefficients should be returned in the same array format, where each element represents the coefficient of the corresponding term in the derivative function.
+    
+    >>>derivative([3, 1, 2, 4, 5])
+    [1, 4, 12, 20]
+    >>>derivative([1, 2, 3])
+    [2, 6]
+    """"""",YES
+"def fib(n: int):
+    """"""
+    Return n-th Fibonacci number.
+    
+    >>>fib(10)
+    55
+    >>>fib(1)
+    1
+    >>>fib(8)
+    21
+    """"""","def fib(n: int):
+    """"""
+    Calculate a student's target mastery score at learning milestone n, where each milestone's target score is the sum of the required mastery levels from the two preceding milestones. Given that students start with baseline scores of 1 for both milestone 1 and 2, determine the required mastery score for milestone n.
+    
+    >>>fib(10)
+    55
+    >>>fib(1)
+    1
+    >>>fib(8)
+    21
+    """"""",YES
+"def can_arrange(arr):
+    """"""
+    Create a function which returns the largest index of an element whichis not greater than or equal to the element immediately preceding it. Ifno such element exists then return -1. The given array will not containduplicate values.Examples:can_arrange([1,2,4,3,5]) = 3can_arrange([1,2,3]) = -1
+    
+
+    """"""","def can_arrange(arr):
+    """"""
+    In a bank's fraud detection system, you need to identify potentially suspicious transaction patterns by analyzing consecutive transaction amounts from a customer's account. Write a function that examines a sequence of transaction amounts and returns the position of the first transaction that shows a decrease compared to its immediately preceding transaction amount. This pattern could indicate unusual spending behavior that requires further investigation. If all transactions show a consistent increasing pattern, return -1 to indicate no suspicious patterns were found. The transaction amounts in the sequence are guaranteed to be unique.
+    
+
+    """"""",YES
+"def remove_vowels(text):
+    """"""
+    remove_vowels is a function that takes string and returns string without vowels.        ghjklm'
+    
+    >>>remove_vowels('')
+    ''
+    >>>remove_vowels('abcdef')
+    'bcdf'
+    >>>remove_vowels('aaaaa')
+    ''
+    >>>remove_vowels('aaBAA')
+    'B'
+    >>>remove_vowels('zbcd')
+    'zbcd'
+    """"""","def remove_vowels(text):
+    """"""
+    Design a content filtering function that removes specific flagged characters from user-generated posts to maintain platform safety standards, where flagged characters are defined as vowels in the input text. The function should process the input text and return a modified version with all flagged characters removed while preserving the original sequence of remaining characters.
+    
+    >>>remove_vowels('')
+    ''
+    >>>remove_vowels('abcdef')
+    'bcdf'
+    >>>remove_vowels('aaaaa')
+    ''
+    >>>remove_vowels('aaBAA')
+    'B'
+    >>>remove_vowels('zbcd')
+    'zbcd'
+    """"""",YES
+"def will_it_fly(q, w):
+    """"""
+    Write a function that returns True if the object q will fly, and False otherwise.The object q will fly if it's balanced (it is a palindromic list) and the sum of its elements is less than or equal the maximum possible weight w.Example:will_it_fly([1, 2], 5) ➞ False # 1+2 is less than the maximum possible weight, but it's unbalanced.will_it_fly([3, 2, 3], 1) ➞ False# it's balanced, but 3+2+3 is more than the maximum possible weight.will_it_fly([3, 2, 3], 9) ➞ True# 3+2+3 is less than the maximum possible weight, and it's balanced.will_it_fly([3], 5) ➞ True# 3 is less than the maximum possible weight, and it's balanced.
+    
+
+    """"""","def will_it_fly(q, w):
+    """"""
+    Design a function for an adaptive learning system that determines if a student is ready to advance to the next learning level. The system should evaluate a sequence of performance scores from interconnected learning modules and return True if the student can progress, False otherwise. A student can progress if they demonstrate balanced understanding (scores form a symmetric pattern) and their total cognitive load score doesn't exceed the system's recommended threshold. For example, a student with performance scores [75, 80, 75] and a cognitive load threshold of 250 would be ready to advance since their scores show balanced understanding and their total cognitive load (230) is within limits. However, a student with scores [85, 90] and the same threshold wouldn't advance despite being under the load limit, as their understanding pattern isn't balanced across related topics. Similarly, scores [90, 85, 90] with a threshold of 200 wouldn't qualify despite being balanced, as the total cognitive load (265) exceeds the recommended limit. The system considers single-module performance scores as inherently balanced.
+    
+
+    """"""",YES
+"def f(n):
+    """"""
+    Implement the function f that takes n as a parameter,and returns a list of size n, such that the value of the element at index i is the factorial of i if i is evenor the sum of numbers from 1 to i otherwise.i starts from 1.the factorial of i is the multiplication of the numbers from 1 to i (1 * 2 * ... * i).Example:f(5) == [1, 2, 6, 24, 15]
+    
+
+    """"""","def f(n):
+    """"""
+    Design a hospital appointment scheduling analyzer that processes n appointment slots throughout the day. For each slot indexed from 1 to n, calculate a scheduling complexity score based on the slot type. For routine appointment slots (those with even indices), compute the complexity score as the product of all scheduling factors from 1 up to that slot index, representing the increasing complexity of coordinating multiple doctor schedules. For urgent care slots (those with odd indices), calculate the priority score as the sum of all values from 1 up to that slot index, representing the accumulated urgency levels. The analyzer should return a list containing these complexity and priority scores for all n slots in order. For example, analyzing 5 slots would return [1, 2, 6, 24, 15], where even-indexed values represent routine appointment complexity scores and odd-indexed values represent urgent care priority scores.
+    
+
+    """"""",YES
+"def below_threshold(l: list, t: int):
+    """"""
+    Return True if all numbers in the list l are below threshold t.
+    
+    >>>below_threshold([1, 2, 4, 10], 100)
+    True
+    >>>below_threshold([1, 20, 4, 10], 5)
+    False
+    """"""","def below_threshold(l: list, t: int):
+    """"""
+    Determine if all engagement metrics (likes, shares, comments) for a social media post are below the platform's minimum performance threshold to identify content requiring visibility optimization. Given a list of engagement values and a threshold value, return True if every engagement metric falls below the specified threshold.
+    
+    >>>below_threshold([1, 2, 4, 10], 100)
+    True
+    >>>below_threshold([1, 20, 4, 10], 5)
+    False
+    """"""",YES
+"def iscube(a):
+    """"""
+    Write a function that takes an integer a and returns True if this ingeger is a cube of some integer number.Note: you may assume the input is always valid.Examples:iscube(1) ==> Trueiscube(2) ==> Falseiscube(-1) ==> Trueiscube(64) ==> Trueiscube(0) ==> Trueiscube(180) ==> False
+    
+
+    """"""","def iscube(a):
+    """"""
+    Design a function for an adaptive learning platform that determines if a student's numerical answer represents a perfect cube. The function should evaluate whether the given number can be expressed as the cube of any integer, including negative numbers and zero. This validation is crucial for assessing student understanding of cube numbers and will be used to dynamically adjust the difficulty of subsequent practice problems in the learning module.
+    
+
+    """"""",YES
+"from typing import List
+
+def factorize(n: int) -> List[int]:
+    """"""
+    Return list of prime factors of given integer in the order from smallest to largest.Each of the factors should be listed number of times corresponding to how many times it appeares in factorization.Input number should be equal to the product of all factors
+    
+    >>>factorize(8)
+    [2, 2, 2]
+    >>>factorize(25)
+    [5, 5]
+    >>>factorize(70)
+    [2, 5, 7]
+    """"""","from typing import List
+
+def factorize(n: int) -> List[int]:
+    """"""
+    Design a feature for an adaptive learning platform that helps students break down a given number into its fundamental building blocks. The system needs to identify all prime numbers that, when multiplied together, create the original number, listing each prime factor as many times as it appears in the complete factorization. The factors must be arranged from smallest to largest to help students understand the systematic approach to number decomposition.
+    
+    >>>factorize(8)
+    [2, 2, 2]
+    >>>factorize(25)
+    [5, 5]
+    >>>factorize(70)
+    [2, 5, 7]
+    """"""",YES
+"def minSubArraySum(nums):
+    """"""
+    Given an array of integers nums, find the minimum sum of any non-empty sub-arrayof nums.ExampleminSubArraySum([2, 3, 4, 1, 2, 4]) == 1minSubArraySum([-1, -2, -3]) == -6
+    
+
+    """"""","def minSubArraySum(nums):
+    """"""
+    Given a sequence of vehicle sensor readings where each value represents performance relative to baseline, find the period of worst consecutive performance by calculating the minimum sum of any continuous sequence of readings. The readings can be positive (above baseline) or negative (below baseline), and at least one reading must be included in the calculation.
+    
+
+    """"""",YES

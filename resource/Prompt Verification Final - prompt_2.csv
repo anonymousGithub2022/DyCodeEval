@@ -1,0 +1,499 @@
+0,1,Equal
+"def reverse_delete(s, c):
+    """"""
+    TaskWe are given two strings s and c, you have to deleted all the characters in s that are equal to any character in cthen check if the result string is palindrome.A string is called palindrome if it reads the same backward as forward.You should return a tuple containing the result string and True/False for the check.ExampleFor s = ""abcde"", c = ""ae"", the result should be ('bcd',False)For s = ""abcdef"", c = ""b""  the result should be ('acdef',False)For s = ""abcdedcba"", c = ""ab"", the result should be ('cdedc',True)
+    
+
+    """"""","def reverse_delete(s, c):
+    """"""
+    In a personalized learning platform, a student's academic progress string needs to be refined by removing specific skill tags that are deemed less critical for their learning path. After removing these skill tags, the system must evaluate whether the remaining skill sequence represents a balanced and coherent learning progression. The goal is to generate a filtered skill sequence and determine if this sequence demonstrates a symmetrical and well-structured learning profile. The output should include the refined skill sequence and a boolean indicator of its learning path coherence.
+    
+
+    """"""",NO
+"def same_chars(s0: str, s1: str):
+    """"""
+    Check if two words have the same characters.
+    
+    >>>same_chars('eabcdzzzz', 'dddzzzzzzzddeddabc')
+    True
+    >>>same_chars('abcd', 'dddddddabc')
+    True
+    >>>same_chars('dddddddabc', 'abcd')
+    True
+    >>>same_chars('eabcd', 'dddddddabc')
+    False
+    >>>same_chars('abcd', 'dddddddabce')
+    False
+    >>>same_chars('eabcdzzzz', 'dddzzzzzzzddddabc')
+    False
+    """"""","def same_chars(s0: str, s1: str):
+    """"""
+    In a city's traffic management system, determine if two route identifiers have identical character composition, which could indicate potential network redundancy or routing similarities. This analysis will help transportation planners assess route overlaps and optimize traffic flow by comparing the character sets of different street or route identifiers.
+    
+    >>>same_chars('eabcdzzzz', 'dddzzzzzzzddeddabc')
+    True
+    >>>same_chars('abcd', 'dddddddabc')
+    True
+    >>>same_chars('dddddddabc', 'abcd')
+    True
+    >>>same_chars('eabcd', 'dddddddabc')
+    False
+    >>>same_chars('abcd', 'dddddddabce')
+    False
+    >>>same_chars('eabcdzzzz', 'dddzzzzzzzddddabc')
+    False
+    """"""",YES
+"def split_words(txt):
+    """"""
+    Given a string of words, return a list of words split on whitespace, if no whitespaces exists in the text youshould split on commas ',' if no commas exists you should return the number of lower-case letters with odd order in thealphabet, ord('a') = 0, ord('b') = 1, ... ord('z') = 25Examplessplit_words(""Hello world!"") ➞ [""Hello"", ""world!""]split_words(""Hello,world!"") ➞ [""Hello"", ""world!""]split_words(""abcdef"") == 3
+    
+
+    """"""","def split_words(txt):
+    """"""
+    In a fraud detection system, you need to develop a method to parse communication or transaction details that could reveal potential fraud patterns. The method should first attempt to split the text into separate segments using whitespaces. If no whitespaces are found, it should then try splitting by commas. In the absence of both whitespaces and commas, the method should calculate the number of lower-case letters with odd alphabetical positions, which might indicate encoded or suspicious communication. This approach helps analysts quickly break down and examine complex transaction or communication strings for hidden irregularities.
+    
+
+    """"""",YES
+"def f(n):
+    """"""
+    Implement the function f that takes n as a parameter,and returns a list of size n, such that the value of the element at index i is the factorial of i if i is evenor the sum of numbers from 1 to i otherwise.i starts from 1.the factorial of i is the multiplication of the numbers from 1 to i (1 * 2 * ... * i).Example:f(5) == [1, 2, 6, 24, 15]
+    
+
+    """"""","def f(n):
+    """"""
+    A transportation logistics company wants to develop a performance and route complexity analysis algorithm for their autonomous vehicle fleet. The algorithm should generate a performance metric list for each vehicle based on its route characteristics. For even-numbered vehicles, the metric will be calculated as the cumulative route complexity factorial, representing the multiplicative challenge of navigating increasingly complex route segments. For odd-numbered vehicles, the metric will be the cumulative route difficulty calculated as the sum of individual route segment challenges. The function takes the total number of vehicles in the fleet as input and returns a performance metric list that helps fleet managers understand the potential operational challenges and route optimization strategies. The goal is to create a comprehensive performance assessment that captures the varying complexities across different vehicles in the autonomous fleet. The metric calculation provides insights into route planning, vehicle assignment, and potential optimization strategies.
+    
+
+    """"""",NO
+"def triangle_area(a, h):
+    """"""
+    Given length of a side and high return area for a triangle.
+    
+    >>>triangle_area(5, 3)
+    7.5
+    """"""","def triangle_area(a, h):
+    """"""
+    An autonomous vehicle navigation system needs to calculate the area of a safety zone defined by a triangular boundary marker to assess potential collision risks and navigation constraints. Given the length of the safety zone marker and its vertical clearance height, compute the total area of the triangular safety region that will inform path planning algorithms and obstacle avoidance strategies.
+    
+    >>>triangle_area(5, 3)
+    7.5
+    """"""",YES
+"def minPath(grid, k):
+    """"""
+    Given a grid with N rows and N columns (N >= 2) and a positive integer k, each cell of the grid contains a value. Every integer in the range [1, N * N]inclusive appears exactly once on the cells of the grid.You have to find the minimum path of length k in the grid. You can startfrom any cell, and in each step you can move to any of the neighbor cells,in other words, you can go to cells which share an edge with you currentcell.Please note that a path of length k means visiting exactly k cells (notnecessarily distinct).You CANNOT go off the grid.A path A (of length k) is considered less than a path B (of length k) ifafter making the ordered lists of the values on the cells that A and B gothrough (let's call them lst_A and lst_B), lst_A is lexicographically lessthan lst_B, in other words, there exist an integer index i (1 <= i <= k)such that lst_A[i] < lst_B[i] and for any j (1 <= j < i) we havelst_A[j] = lst_B[j].It is guaranteed that the answer is unique.Return an ordered list of the values on the cells that the minimum path go through.Examples:    Input: grid = [ [1,2,3], [4,5,6], [7,8,9]], k = 3    Output: [1, 2, 1]    Input: grid = [ [5,9,3], [4,1,6], [7,8,2]], k = 1    Output: [1]
+    
+
+    """"""","def minPath(grid, k):
+    """"""
+    An autonomous vehicle navigation system needs to determine the safest and most optimal route through a city's road network. Given a city grid representing road intersections and segments, where each cell contains a unique identification number, the system must find the minimum risk path of exactly k road segments. The path starts from any intersection and can move to adjacent road segments, ensuring complete coverage while adhering to strict safety protocols. The path selection prioritizes routes with lexicographically smaller identification sequences, which could represent factors like traffic density, historical accident data, or infrastructure quality. The vehicle must strictly stay within the defined road network grid and cannot deviate outside its boundaries. The goal is to generate a precise route sequence that minimizes potential risks while meeting the required traversal length. The route selection algorithm must guarantee a unique optimal path that balances safety, efficiency, and comprehensive network exploration. The system will return an ordered list of intersection/segment identification numbers representing the recommended route for autonomous navigation.
+    
+
+    """"""",NO
+"def check_if_last_char_is_a_letter(txt):
+    """"""
+    Create a function that returns True if the last characterof a given string is an alphabetical character and is nota part of a word, and False otherwise.Note: ""word"" is a group of characters separated by space.Examples:check_if_last_char_is_a_letter(""apple pie"") ➞ Falsecheck_if_last_char_is_a_letter(""apple pi e"") ➞ Truecheck_if_last_char_is_a_letter(""apple pi e "") ➞ Falsecheck_if_last_char_is_a_letter("""") ➞ False
+    
+
+    """"""","def check_if_last_char_is_a_letter(txt):
+    """"""
+    In a credit card transaction fraud detection system, develop a function that determines whether the last character of a transaction description is a standalone alphabetical character potentially indicating a suspicious transaction marker. The function should return True if the last character is an alphabetical letter that does not form part of a complete word, which could signal an unusual transaction pattern. The function must handle various transaction description formats, including empty strings and multi-word descriptions, to support comprehensive anomaly detection in financial transaction logs.
+    
+
+    """"""",YES
+"def sorted_list_sum(lst):
+    """"""
+    Write a function that accepts a list of strings as a parameter,deletes the strings that have odd lengths from it,and returns the resulted list with a sorted order,The list is always a list of strings and never an array of numbers,and it may contain duplicates.The order of the list should be ascending by length of each word, and youshould return the list sorted by that rule.If two words have the same length, sort the list alphabetically.The function should return a list of strings in sorted order.You may assume that all words will have the same length.For example:assert list_sort([""aa"", ""a"", ""aaa""]) => [""aa""]assert list_sort([""ab"", ""a"", ""aaa"", ""cd""]) => [""ab"", ""cd""]
+    
+
+    """"""","def sorted_list_sum(lst):
+    """"""
+    Design a function for fleet management that processes a list of vehicle identification codes and route segment labels. The function should filter out codes with odd-length identifiers, helping to streamline vehicle maintenance tracking and route planning. The resulting list should be sorted first by the length of the vehicle/route identifiers, with secondary sorting done alphabetically when identifier lengths are equal. This approach will help transportation managers quickly identify and prioritize vehicles or route segments for maintenance and optimization. The function must handle potential duplicate identifiers and ensure a clean, organized output for strategic decision-making. The input will always be a list of string-based codes representing vehicle or route characteristics.
+    
+
+    """"""",YES
+"def right_angle_triangle(a, b, c):
+    """"""
+    Given the lengths of the three sides of a triangle. Return True if the threesides form a right-angled triangle, False otherwise.A right-angled triangle is a triangle in which one angle is right angle or 90 degree.Example:right_angle_triangle(3, 4, 5) == Trueright_angle_triangle(1, 2, 3) == False
+    
+
+    """"""","def right_angle_triangle(a, b, c):
+    """"""
+    In a personalized learning platform, students progress through different skill modules with varying complexity levels. Given the lengths of three learning modules representing different skill domains, determine if these modules form a balanced learning progression that suggests a comprehensive skill development path. A ""balanced"" learning path is defined as one where the modules' lengths create a right-angled relationship, indicating an optimal skill acquisition strategy. The goal is to analyze whether the combination of module lengths represents an ideal learning trajectory that ensures balanced skill development across different knowledge domains.
+    
+
+    """"""",YES
+"def digitSum(s):
+    """"""
+    TaskWrite a function that takes a string as input and returns the sum of the upper characters only'ASCII codes.Examples:    digitSum("""") => 0    digitSum(""abAB"") => 131    digitSum(""abcCd"") => 67    digitSum(""helloE"") => 69    digitSum(""woArBld"") => 131    digitSum(""aAaaaXa"") => 153
+    
+
+    """"""","def digitSum(s):
+    """"""
+    In a medical genetic screening system, develop a function that calculates a risk assessment score by summing the ASCII values of uppercase characters in a patient's genetic sequence or medical history text. The function will help identify potential genetic markers or significant medical conditions that may require further investigation, with higher scores indicating a potentially higher risk profile.
+    
+
+    """"""",YES
+"def total_match(lst1, lst2):
+    """"""
+    Write a function that accepts two lists of strings and returns the list that has total number of chars in the all strings of the list less than the other list.if the two lists have the same number of chars, return the first list.Examplestotal_match([], []) ➞ []total_match(['hi', 'admin'], ['hI', 'Hi']) ➞ ['hI', 'Hi']total_match(['hi', 'admin'], ['hi', 'hi', 'admin', 'project']) ➞ ['hi', 'admin']total_match(['hi', 'admin'], ['hI', 'hi', 'hi']) ➞ ['hI', 'hi', 'hi']total_match(['4'], ['1', '2', '3', '4', '5']) ➞ ['4']
+    
+
+    """"""","def total_match(lst1, lst2):
+    """"""
+    In a social media recommendation system, develop a function that compares two lists of user interaction strings and returns the list with fewer total characters, representing the less engaging content collection. If both lists have equivalent character lengths, prioritize the first list as the default recommendation set. The goal is to help the recommendation engine identify and potentially promote content with more concise and potentially more impactful user interactions.
+    
+
+    """"""",YES
+"def fibfib(n: int):
+    """"""
+    The FibFib number sequence is a sequence similar to the Fibbonacci sequnece that's defined as follows:fibfib(0) == 0fibfib(1) == 0fibfib(2) == 1fibfib(n) == fibfib(n-1) + fibfib(n-2) + fibfib(n-3).Please write a function to efficiently compute the n-th element of the fibfib number sequence.
+    
+    >>>fibfib(1)
+    0
+    >>>fibfib(5)
+    4
+    >>>fibfib(8)
+    24
+    """"""","def fibfib(n: int):
+    """"""
+    In a dynamic retail inventory management system, a specialized forecasting algorithm uses a modified sequence called the FibFib sequence to predict product demand cycles. The algorithm requires an efficient method to calculate the nth element of the sequence, which represents potential inventory fluctuations or pricing adjustment points. Develop a function that can quickly compute the FibFib value for a given time period or product cycle index, enabling precise inventory prediction and strategic pricing decisions.
+    
+    >>>fibfib(1)
+    0
+    >>>fibfib(5)
+    4
+    >>>fibfib(8)
+    24
+    """"""",NO
+"def get_row(lst, x):
+    """"""
+    You are given a 2 dimensional data, as a nested lists,which is similar to matrix, however, unlike matrices,each row may contain a different number of columns.Given lst, and integer x, find integers x in the list,and return list of tuples, [(x1, y1), (x2, y2) ...] such thateach tuple is a coordinate - (row, columns), starting with 0.Sort coordinates initially by rows in ascending order.Also, sort coordinates of the row by columns in descending order.Examples:get_row([  [1,2,3,4,5,6],  [1,2,3,4,1,6],  [1,2,3,4,5,1]], 1) == [(0, 0), (1, 4), (1, 0), (2, 5), (2, 0)]get_row([], 1) == []get_row([[], [1], [1, 2, 3]], 3) == [(2, 2)]
+    
+
+    """"""","def get_row(lst, x):
+    """"""
+    A retail inventory management system needs to track the precise locations of specific product quantities across multiple warehouse segments. Given a complex multi-dimensional inventory dataset representing product quantities in different warehouse locations or product categories, and a specific product identifier or quantity value, develop an algorithm to identify and map all occurrences of this product. The system must return a comprehensive list of coordinate tuples indicating exact product locations, with each tuple representing the warehouse segment (row) and specific product position (column). The result should be organized first by sorting warehouse segments in ascending order, and then by sorting product positions within each segment in descending order. This approach will enable inventory managers to quickly locate and analyze product distribution, supporting efficient inventory tracking, demand forecasting, and strategic stock management. The solution must handle varying inventory segment sizes and potential empty warehouse segments while maintaining a consistent and precise mapping strategy.
+    
+
+    """"""",YES
+"def fizz_buzz(n: int):
+    """"""
+    Return the number of times the digit 7 appears in integers less than n which are divisible by 11 or 13.
+    
+    >>>fizz_buzz(50)
+    0
+    >>>fizz_buzz(78)
+    2
+    >>>fizz_buzz(79)
+    3
+    """"""","def fizz_buzz(n: int):
+    """"""
+    In the bank's automated risk assessment system, determine the number of loan applications with the digit 7 appearing in their requested credit limit amount, where the credit limit is less than n and divisible by either 11 or 13. This analysis helps identify potential risk patterns or statistical anomalies in loan application distributions.
+    
+    >>>fizz_buzz(50)
+    0
+    >>>fizz_buzz(78)
+    2
+    >>>fizz_buzz(79)
+    3
+    """"""",YES
+"def is_equal_to_sum_even(n):
+    """"""
+    Evaluate whether the given number n can be written as the sum of exactly 4 positive even numbersExampleis_equal_to_sum_even(4) == Falseis_equal_to_sum_even(6) == Falseis_equal_to_sum_even(8) == True
+    
+
+    """"""","def is_equal_to_sum_even(n):
+    """"""
+    Determine if a given inventory quantity can be strategically distributed across four distinct even-numbered shipments, ensuring that the total quantity is exactly represented by the sum of these four even shipment sizes.
+    
+
+    """"""",YES
+"def count_up_to(n):
+    """"""
+    Implement a function that takes an non-negative integer and returns an array of the first nintegers that are prime numbers and less than n.for example:count_up_to(5) => [2,3]count_up_to(11) => [2,3,5,7]count_up_to(0) => []count_up_to(20) => [2,3,5,7,11,13,17,19]count_up_to(1) => []count_up_to(18) => [2,3,5,7,11,13,17]
+    
+
+    """"""","def count_up_to(n):
+    """"""
+    Design a function for an adaptive learning platform that generates a list of prime numbers within a student's current mathematical skill level, helping educators track and customize mathematical learning progression. The function should return an array of prime numbers less than the student's current skill level, allowing targeted practice and assessment of number theory comprehension. The output will help the learning platform create personalized math challenges and track student advancement in understanding prime number concepts.
+    
+
+    """"""",YES
+"from typing import List
+
+def below_zero(operations: List[int]) -> bool:
+    """"""
+    You're given a list of deposit and withdrawal operations on a bank account that starts withzero balance. Your task is to detect if at any point the balance of account fallls below zero, andat that point function should return True. Otherwise it should return False.
+    
+    >>>below_zero([1, 2, 3])
+    False
+    >>>below_zero([1, 2, -4, 5])
+    True
+    """"""","from typing import List
+
+def below_zero(operations: List[int]) -> bool:
+    """"""
+    In a personalized healthcare tracking system, a patient's medical expense budget starts at zero. Given a sequence of medical procedure costs and insurance claim transactions, develop a function that determines if the patient's healthcare expense budget becomes negative at any point during treatment. The function should return True if the cumulative expenses exceed the initial budget, indicating potential financial strain, and False otherwise. The goal is to provide early financial risk detection in personalized treatment planning.
+    
+    >>>below_zero([1, 2, 3])
+    False
+    >>>below_zero([1, 2, -4, 5])
+    True
+    """"""",YES
+"from typing import List
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """"""
+    Input to this function is a string containing multiple groups of nested parentheses. Your goal is toseparate those group into separate strings and return the list of those.Separate groups are balanced (each open brace is properly closed) and not nested within each otherIgnore any spaces in the input string.
+    
+    >>>separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """"""","from typing import List
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """"""""""""
+    In an advanced e-banking security system, transaction authorization codes are encoded using nested parenthetical groups representing different authentication layers. Your task is to develop a function that can parse and separate these complex security tokens into distinct, independently verifiable authentication groups. Each group must be a balanced parenthetical structure that is not nested within another group. The function should process the input authorization code string, extracting only the top-level, complete authentication segments while ignoring any whitespace characters. The goal is to enable precise verification of each independent security layer in the multi-factor authentication process.
+    
+    >>>separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """"""""""""""",YES
+"def special_factorial(n):
+    """"""
+    The Brazilian factorial is defined as:brazilian_factorial(n) = n! * (n-1)! * (n-2)! * ... * 1!where n > 0For example:The function will receive an integer as input and should return the specialfactorial of this integer.
+    
+    >>>special_factorial(4)
+    288
+    """"""","def special_factorial(n):
+    """"""
+    In a retail inventory demand forecasting system, analysts have developed a unique calculation method to predict potential stock variations across multiple product categories. The method involves computing a specialized cumulative factorial multiplier that captures the compounded complexity of inventory dynamics. For each number of product categories (n), the system calculates a complex factorial value by multiplying the factorials of all categories from n down to 1. This approach helps generate sophisticated predictive insights into potential stock fluctuations and demand patterns. The goal is to create a function that takes the number of product categories as input and returns the specialized factorial calculation, which can be used to model intricate inventory scenarios and potential demand variations.
+    
+    >>>special_factorial(4)
+    288
+    """"""",YES
+"def fib4(n: int):
+    """"""
+    The Fib4 number sequence is a sequence similar to the Fibbonacci sequnece that's defined as follows:fib4(0) -> 0fib4(1) -> 0fib4(2) -> 2fib4(3) -> 0fib4(n) -> fib4(n-1) + fib4(n-2) + fib4(n-3) + fib4(n-4).Please write a function to efficiently compute the n-th element of the fib4 number sequence.  Do not use recursion.
+    
+    >>>fib4(5)
+    4
+    >>>fib4(6)
+    8
+    >>>fib4(7)
+    14
+    """"""","def fib4(n: int):
+    """"""
+    In a personalized learning platform, student progression through educational modules follows a unique computational sequence called the Learning Progress Sequence. This sequence tracks a student's advancement through increasingly complex learning stages, where each stage's complexity is determined by combining the complexity levels of the previous four stages. Design an efficient algorithm to compute the learning complexity score for a specific academic milestone without using recursive methods. The algorithm should accurately calculate the progression complexity for any given milestone in a student's personalized learning path.
+    
+    >>>fib4(5)
+    4
+    >>>fib4(6)
+    8
+    >>>fib4(7)
+    14
+    """"""",NO
+"def prod_signs(arr):
+    """"""
+    You are given an array arr of integers and you need to returnsum of magnitudes of integers multiplied by product of all signsof each number in the array, represented by 1, -1 or 0.Note: return None for empty arr.Example:>>> prod_signs([1, 2, 2, -4]) == -9>>> prod_signs([0, 1]) == 0>>> prod_signs([]) == None
+    
+
+    """"""","def prod_signs(arr):
+    """"""
+    In a real estate predictive valuation model, you are given an array of property value modifiers representing market factors. Calculate the total market impact by multiplying the absolute values of these modifiers with the aggregate sign influence of all factors. The sign influence determines whether the overall market trend is positive, negative, or neutral. If no modifiers are present, return None to indicate insufficient market data for valuation.
+    
+
+    """"""",YES
+"def prime_fib(n: int):
+    """"""
+    prime_fib returns n-th number that is a Fibonacci number and it's also prime.
+    
+    >>>prime_fib(1)
+    2
+    >>>prime_fib(2)
+    3
+    >>>prime_fib(3)
+    5
+    >>>prime_fib(4)
+    13
+    >>>prime_fib(5)
+    89
+    """"""","def prime_fib(n: int):
+    """"""
+    In a financial transaction analysis system, develop a method to identify the nth unique transaction that simultaneously exhibits Fibonacci sequence characteristics and prime number properties. This method will help detect rare and mathematically significant transaction patterns by returning the specific transaction number that meets these dual mathematical criteria. The function should efficiently compute and validate the transaction index based on the combined Fibonacci and prime number constraints.
+    
+    >>>prime_fib(1)
+    2
+    >>>prime_fib(2)
+    3
+    >>>prime_fib(3)
+    5
+    >>>prime_fib(4)
+    13
+    >>>prime_fib(5)
+    89
+    """"""",YES
+"from typing import List
+
+def filter_by_substring(strings: List[str], substring: str) -> List[str]:
+    """"""
+    Filter an input list of strings only for ones that contain given substring
+    
+    >>>filter_by_substring([], 'a')
+    []
+    >>>filter_by_substring(['abc', 'bacd', 'cde', 'array'], 'a')
+    ['abc', 'bacd', 'array']
+    """"""","from typing import List
+
+def filter_by_substring(strings: List[str], substring: str) -> List[str]:
+    """"""
+    In a social media recommendation system, develop a function that filters a list of user-generated content posts by identifying and returning only those posts that contain a specific user-defined keyword or hashtag of interest, enabling personalized content discovery.
+    
+    >>>filter_by_substring([], 'a')
+    []
+    >>>filter_by_substring(['abc', 'bacd', 'cde', 'array'], 'a')
+    ['abc', 'bacd', 'array']
+    """"""",YES
+"def triples_sum_to_zero(l: list):
+    """"""
+    triples_sum_to_zero takes a list of integers as an input.it returns True if there are three distinct elements in the list thatsum to zero, and False otherwise.
+    
+    >>>triples_sum_to_zero([1, 3, 5, 0])
+    False
+    >>>triples_sum_to_zero([1, 3, -2, 1])
+    True
+    >>>triples_sum_to_zero([1, 2, 3, 7])
+    False
+    >>>triples_sum_to_zero([2, 4, -5, 3, 9, 7])
+    True
+    >>>triples_sum_to_zero([1])
+    False
+    """"""","def triples_sum_to_zero(l: list):
+    """"""""""""
+    In a credit card transaction fraud detection system, develop a method to analyze transaction amounts for potential money laundering or suspicious financial activity. The algorithm should identify if there exist three distinct transaction amounts in the financial log that precisely cancel each other out (sum to zero). This could indicate coordinated attempts to manipulate transaction records or create artificial financial balances. Return True if such a combination of transactions is found, and False otherwise.
+    
+    >>>triples_sum_to_zero([1, 3, 5, 0])
+    False
+    >>>triples_sum_to_zero([1, 3, -2, 1])
+    True
+    >>>triples_sum_to_zero([1, 2, 3, 7])
+    False
+    >>>triples_sum_to_zero([2, 4, -5, 3, 9, 7])
+    True
+    >>>triples_sum_to_zero([1])
+    False
+    """"""""""""""",YES
+"def median(l: list):
+    """"""
+    Return median of elements in the list l.
+    
+    >>>median([3, 1, 2, 4, 5])
+    3
+    >>>median([-10, 4, 6, 1000, 10, 20])
+    15.0
+    """"""","def median(l: list):
+    """"""
+    In a medical imaging analysis system, given a list of numerical measurements extracted from diagnostic scans, calculate the median value. The median measurement will serve as a critical statistical reference point for evaluating potential disease indicators and normalizing diagnostic data across patient screening processes.
+    
+    >>>median([3, 1, 2, 4, 5])
+    3
+    >>>median([-10, 4, 6, 1000, 10, 20])
+    15.0
+    """"""",YES
+"def anti_shuffle(s):
+    """"""
+    Write a function that takes a string and returns an ordered version of it.Ordered version of string, is a string where all words (separated by space)are replaced by a new word where all the characters arranged inascending order based on ascii value.Note: You should keep the order of words and blank spaces in the sentence.For example:anti_shuffle('Hi') returns 'Hi'anti_shuffle('hello') returns 'ehllo'anti_shuffle('Hello World!!!') returns 'Hello !!!Wdlor'
+    
+
+    """"""","def anti_shuffle(s):
+    """"""
+    In a credit card fraud detection system, develop a function that takes a transaction description or merchant name and returns a character-sorted version. The sorting helps reveal potential text manipulation patterns that might indicate fraudulent activity. The function should preserve the original word order and spacing while rearranging the characters of each word in ascending order based on their ASCII values. This transformation can help analysts identify suspicious transaction descriptions that might be deliberately obfuscated or altered to hide their true nature.
+    
+
+    """"""",YES
+"from typing import List
+
+def parse_music(music_string: str) -> List[int]:
+    """"""
+    Input to this function is a string representing musical notes in a special ASCII format.Your task is to parse this string and return list of integers corresponding to how many beats does eachnot last.Here is a legend:'o' - whole note, lasts four beats'o|' - half note, lasts two beats'.|' - quater note, lasts one beat
+    
+    >>>parse_music('o o| .| o| o| .| .| .| .| o o')
+    [4, 2, 1, 2, 2, 1, 1, 1, 1, 4, 4]
+    """"""","from typing import List
+
+def parse_music(music_string: str) -> List[int]:
+    """"""
+    In a credit card fraud detection system, you are given a string representing transaction timing patterns encoded in a special notation. Your task is to parse this string and return a list of integers corresponding to the duration significance of each transaction segment. The notation indicates different transaction duration patterns: 'o' represents a long-duration transaction (4 time units), 'o|' indicates a medium-duration transaction (2 time units), and '.|' signifies a short-duration transaction (1 time unit). These duration patterns can help identify potential anomalous transaction behaviors in the fraud detection algorithm.
+    
+    >>>parse_music('o o| .| o| o| .| .| .| .| o o')
+    [4, 2, 1, 2, 2, 1, 1, 1, 1, 4, 4]
+    """"""",YES
+"from typing import List
+
+def rescale_to_unit(numbers: List[float]) -> List[float]:
+    """"""
+    Given list of numbers (of at least two elements), apply a linear transform to that list,such that the smallest number will become 0 and the largest will become 1
+    
+    >>>rescale_to_unit([1.0, 2.0, 3.0, 4.0, 5.0])
+    [0.0, 0.25, 0.5, 0.75, 1.0]
+    """"""","from typing import List
+
+def rescale_to_unit(numbers: List[float]) -> List[float]:
+    """"""
+    Normalize a list of social media post engagement metrics to a standardized 0-1 scale, transforming the lowest engagement score to 0 and the highest engagement score to 1, enabling fair comparative analysis across different posts.
+    
+    >>>rescale_to_unit([1.0, 2.0, 3.0, 4.0, 5.0])
+    [0.0, 0.25, 0.5, 0.75, 1.0]
+    """"""",YES
+"def is_prime(n):
+    """"""
+    Return true if a given number is prime, and false otherwise.
+    
+    >>>is_prime(6)
+    False
+    >>>is_prime(101)
+    True
+    >>>is_prime(11)
+    True
+    >>>is_prime(13441)
+    True
+    >>>is_prime(61)
+    True
+    >>>is_prime(4)
+    False
+    >>>is_prime(1)
+    False
+    """"""","def is_prime(n):
+    """"""
+    In a transportation network analysis system, determine whether a specific vehicle count at an intersection represents a prime number, which could signal unique traffic flow characteristics or potential optimization opportunities. If the vehicle count is a prime number, the system will flag this segment for further detailed traffic pattern investigation, otherwise it will proceed with standard traffic management protocols.
+    
+    >>>is_prime(6)
+    False
+    >>>is_prime(101)
+    True
+    >>>is_prime(11)
+    True
+    >>>is_prime(13441)
+    True
+    >>>is_prime(61)
+    True
+    >>>is_prime(4)
+    False
+    >>>is_prime(1)
+    False
+    """"""",YES
+"def closest_integer(value):
+    """"""
+    Create a function that takes a value (string) representing a numberand returns the closest integer to it. If the number is equidistantfrom two integers, round it away from zero.ExamplesNote:Rounding away from zero means that if the given number is equidistantfrom two integers, the one you should return is the one that is thefarthest from zero. For example closest_integer(""14.5"") shouldreturn 15 and closest_integer(""-14.5"") should return -15.
+    
+    >>>closest_integer(""10"")
+    10
+    >>>closest_integer(""15.3"")
+    15
+    """"""","def closest_integer(value):
+    """"""
+    In a medical risk assessment system, healthcare professionals need a precise method to round clinical measurements for accurate patient evaluation. Develop a function that takes a patient's clinical measurement as a string and returns the closest integer value, with special handling for borderline cases. When a measurement is exactly halfway between two integers, the function must round away from zero to ensure the most conservative risk interpretation. For example, a body temperature reading of ""37.5"" should round to 38, while ""-37.5"" would round to -38. This rounding approach helps clinicians make more informed decisions about potential health risks and intervention strategies. The function must handle both positive and negative measurements with consistent rounding logic. The system will use this function to standardize clinical data for risk assessment algorithms and medical record documentation.
+    
+    >>>closest_integer(""10"")
+    10
+    >>>closest_integer(""15.3"")
+    15
+    """"""",YES
