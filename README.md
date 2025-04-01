@@ -30,3 +30,45 @@ The following Figure shows an example of applying DyCodeEval to generate a new p
 <div  align="center">    
  <img src="https://github.com/anonymousGithub2022/DyCodeEval/blob/main/resource/stability.jpg" width="1200" height="320" alt="Benchmarking on-the-wild model"/><br/>
 </div>   
+
+
+### Collision Results
+
+To empirically evaluate the collision rate of our method, we conduct an experiment on HumanEval. First, we run DyCodeEval on HumanEval to generate an initial set of transformed programming problems. We then repeat this process \( N \) times \( N = 10, 20, 30, 40, 50 \) and measure:  
+1. **Repeat rate** – the proportion of problems from the initial transformed set that reappear in the subsequent \( N \) runs.  
+2. **Collision rate** – the proportion of problems within the \( N \) runs that are duplicates of any previously generated problem, regardless of whether they match the initial set.  
+
+To highlight the advantages of our hierarchical transformation, we compare it against a baseline where we prompt an LLM (using the following prompt) to generate a new programming problem from a given seed. We report both the repeat rate and collision rate for this baseline as well.
+
+
+Baseline Prompt 
+```
+Rewrite the following problem description to create a new problem description for new scenario\n\n
+
+Original Problem Description\n
+{ori_inst}\n\n
+
+Please ensure to put your rewritten problem description in <new_problem></new_problem> tags.
+```
+
+| \# Of Run | Ours           | Ours                   | Baseline       | Baseline               |
+| --------- | -------------- | ---------------------- | -------------- | ---------------------- |
+|           | \# of repeated | repeated rate | \# of repeated | repeated rate |
+| 10        | 0              | 0                      | 3              | 0.018292683            |
+| 20        | 0              | 0                      | 4              | 0.024390244            |
+| 30        | 0              | 0                      | 8              | 0.048780488            |
+| 40        | 0              | 0                      | 9              | 0.054878049            |
+| 50        | 0              | 0                      | 9              | 0.054878049            |
+
+| \# Of Run | Ours            | Ours                    | Baseline        | Baseline                |
+| --------- | --------------- | ----------------------- | --------------- | ----------------------- |
+|           | \# of collision | collision rate | \# of collision | collision rate |
+| 10        | 0               | 0                       | 7               | 0.042682927             |
+| 20        | 0               | 0                       | 17              | 0.103658537             |
+| 30        | 0               | 0                       | 30              | 0.182926829             |
+| 40        | 0               | 0                       | 36              | 0.219512195             |
+| 50        | 0               | 0                       | 39              | 0.237804878             |
+
+
+
+
