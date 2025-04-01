@@ -11,6 +11,14 @@ The following Figure shows an example of applying DyCodeEval to generate a new p
 </div>   
 
 
+### File Structure
++ src/codellm               This directory includes the implementation of different code LLMs.
++ src/data.py               This file implement the data class            
++ bash/expXXX.sh            This bash script is used to generate code snippet from problem description.
++ generate_code.py          This file is the main pipeline for generating code using different LLMs
++ eval_pass_K.py            This file includes the function to execute the generate code with the test cases and compute pass@K.
++ overfit_train.py          This file incldue ethe implementation of overfiting the model
+
 ### Benchmarking on-the-wild Model
 <div  align="center">    
  <img src="https://github.com/anonymousGithub2022/DyCodeEval/blob/main/resource/wild.jpg" width="1200" height="320" alt="An Example from DyCodeEval"/><br/>
